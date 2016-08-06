@@ -1,0 +1,23 @@
+{
+  "name": "interfacestudio",
+  "version": "1.0.0",
+  "description": "WordPress Theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johanndyck/interfacestudio.git"
+  },
+  "author": "Johann Dyck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johanndyck/interfacestudio/issues"
+  },
+  "homepage": "https://github.com/johanndyck/interfacestudio#readme",
+  "devDependencies": {
+    "gulp-util": "^3.0.7",
+    "sass": "^0.5.0"
+  }
+}
