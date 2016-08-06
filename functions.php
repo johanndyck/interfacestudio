@@ -92,8 +92,30 @@ function interfacestudio_widgets_init() {
 		'description'   => esc_html__( 'Add widgets here.', 'interfacestudio' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Front Page Welcome', 'interfacestudio' ),
+		'id'            => 'welcome',
+		'description'   => esc_html__( 'Add widgets here.', 'interfacestudio' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+	) );	
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Front Page Services', 'interfacestudio' ),
+		'id'            => 'services',
+		'description'   => esc_html__( 'Add widgets here.', 'interfacestudio' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Front Page Products', 'interfacestudio' ),
+		'id'            => 'products',
+		'description'   => esc_html__( 'Add widgets here.', 'interfacestudio' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
 	) );
 }
 add_action( 'widgets_init', 'interfacestudio_widgets_init' );
