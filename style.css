@@ -228,7 +228,8 @@ textarea {
   font-family: "museo-sans", sans-serif;
   font-size: 19.2px;
   font-size: 1.2rem;
-  line-height: 1.5; }
+  line-height: 1.5;
+  font-weight: 100; }
 
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
@@ -414,11 +415,11 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue; }
+  color: #597fb3; }
   a:visited {
-    color: purple; }
+    color: #59464a; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #799ac8; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -628,21 +629,51 @@ a {
     width: 10em;
     margin: 0 auto; }
 
+.site-title {
+  margin: 2rem; }
+
 .lead {
-  background-color: darkslategray;
+  background-color: #76831a;
+  background: -webkit-linear-gradient(rgba(89, 70, 74, 0.2), #59464a), url("./images/devices.jpg");
+  background: linear-gradient(rgba(89, 70, 74, 0.2), #59464a), url("./images/devices.jpg");
+  background-size: cover;
+  background-position: center;
   color: white;
-  min-height: 60vh;
-  padding: 2rem; }
+  padding: 1.5rem; }
   .lead h2 {
     font-weight: 900;
-    font-size: 32px;
-    font-size: 2rem;
-    line-height: 2rem;
-    padding-top: 30vh;
-    font-family: "museo-sans"; }
+    font-size: 38.4px;
+    font-size: 2.4rem;
+    line-height: 1em;
+    padding-top: 35vh;
+    font-family: "museo-sans", sans-serif;
+    text-transform: uppercase; }
   .lead p {
     font-weight: 100;
     font-family: "museo-sans"; }
+
+.feature {
+  padding: 1.5rem;
+  font-weight: 200; }
+  .feature h3 {
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #76831a; }
+  .feature .icon {
+    display: block;
+    margin: 0 auto;
+    max-width: 15rem; }
+
+.about {
+  padding: 1.5rem;
+  background: #76100e;
+  color: #f5e8df; }
+
+.contact {
+  padding: 1.5rem; }
+
+.site-footer {
+  padding: 1.5rem; }
 
 /*--------------------------------------------------------------
 # Infinite scroll
