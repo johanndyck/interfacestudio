@@ -8,41 +8,72 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
+	
+		<div class="lead">
+			<h2>Building Online Connection</h2>
+			<p>Our online lives are dominated by interfaces. We want to build the best interfaces that not only get the job done, but connect people to you. If you need help with your web project contact us to see how we can help.
+			</p>
+			<button>Contact</button>
+		</div>	
+		<div class="welcome">
+
+		</div>
+		<section class="features">
+			<div class="feature">
+				<img src="Goals" alt="Goals">
+				<h3>Online Strategy Consulting</h3>
+				<p>Does your site meet your business goals? We will work with you to connect your business strategy with your online presence.</p>
+			</div>
+			<div class="feature">
+				<img src="Interaction" alt="Interaction">
+				<h3>Creating Memorable Experiences</h3>
+				<p>Your user expects a great experience when visiting your site. We’ll make your site perform well, and look like you.</p>
+			</div>
+			<div class="feature">
+				<img src="Solutions" alt="Solutions">
+				<h3>Maintainable Solutions</h3>
+				<p>Let’s work together to develop a solution that is not outdated as soon as it’s launched.</p>
+			</div>		
+		</section>
 		
-		<?php if ( is_active_sidebar( 'welcome' ) ) : ?>
-			<div id="welcome" role="welcome">
-				<?php dynamic_sidebar( 'welcome' ); ?>
-			</div><!-- #welcome -->
-		<?php endif; ?>
+		<section class="about">
+			<div class="iamge"><img src="photo" alt="Johann Dyck"></div>
+			<div>Hi. I’m Johann Dyck and I have been designing and developing sites for over 10 years. I started The Interface Studio to help people and businesses have an online presence that they are proud to claim. Contact me to see how we can work together.</div>
+		</section>
 		
-		<?php if ( is_active_sidebar( 'services' ) ) : ?>
-			<div id="services" role="services">
-				<?php dynamic_sidebar( 'services' ); ?>
-			</div><!-- #services -->
-		<?php endif; ?>
-
-		<?php if ( is_active_sidebar( 'products' ) ) : ?>
-			<div id="products" role="products">
-				<?php dynamic_sidebar( 'products' ); ?>
-			</div><!-- #products -->
-		<?php endif; ?>
-
-		<main id="main" class="site-main" role="main">
-
+		<?php 	// testimonials go here 
+				// free wordpress theme goes here
+		?>
+		
+		<section class="contact">
+		
 			<?php
-			while ( have_posts() ) : the_post();
+				if ( have_posts() ) :
+			
+					/* Start the Loop */
+					while ( have_posts() ) : the_post();
 
-				get_template_part( 'template-parts/content', 'page' );
+						/*
+						 * Include the Post-Format-specific template for the content.
+						 * If you want to override this in a child theme, then include a file
+						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+						 */
+						get_template_part( 'template-parts/content', get_post_format() );
 
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
+					endwhile;
 
-			endwhile; // End of the loop.
-			?>
+					the_posts_navigation();
 
-		</main><!-- #main -->
+				else :
+
+					get_template_part( 'template-parts/content', 'none' );
+
+				endif; ?>
+
+	
+		</section>
+		
+	
 	</div><!-- #primary -->
 
 <?php

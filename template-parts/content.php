@@ -11,6 +11,12 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
+	<style>
+		.entry-header {background-image:'<?php if ( has_post_thumbnail() ) { echo get_the_post_thumbnail('large'); } ?>';}
+		
+		
+	</style>
+	<?php if ( has_post_thumbnail() ) {	the_post_thumbnail('large'); } ?>
 		<?php
 		if ( is_single() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );

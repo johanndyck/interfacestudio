@@ -9,6 +9,19 @@
 
 ?>
 
+<?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' ); ?>
+
+	<style>
+		.entry-header {
+			background: url('<?php echo $backgroundImg[0]; ?>');
+			background-size: cover;
+			min-height:62vh;
+			background-position: center;
+				
+		}
+		
+		
+	</style>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
