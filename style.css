@@ -626,54 +626,163 @@ a {
 .site-branding {
   text-align: center; }
   .site-branding img {
-    width: 10em;
+    height: 100px;
     margin: 0 auto; }
 
 .site-title {
   margin: 2rem; }
 
+.container {
+  padding: 4rem 1.5rem;
+  max-width: 1100px; }
+
+@media (min-width: 700px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto; } }
+
 .lead {
   background-color: #76831a;
-  background: -webkit-linear-gradient(rgba(89, 70, 74, 0.2), #59464a), url("./images/devices.jpg");
-  background: linear-gradient(rgba(89, 70, 74, 0.2), #59464a), url("./images/devices.jpg");
+  background: -webkit-linear-gradient(rgba(89, 127, 179, 0.4), black), url("./images/devices-small.jpg");
+  background: linear-gradient(rgba(89, 127, 179, 0.4), black), url("./images/devices-small.jpg");
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 1.5rem; }
+  text-align: center; }
   .lead h2 {
     font-weight: 900;
-    font-size: 38.4px;
-    font-size: 2.4rem;
+    font-size: 37px;
     line-height: 1em;
-    padding-top: 35vh;
+    padding-top: 140px;
+    padding-bottom: 10px;
     font-family: "museo-sans", sans-serif;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(10, 20, 17, 0.5);
+    letter-spacing: 0.04em;
+    border-bottom: 4px solid rgba(121, 154, 200, 0.8);
+    max-width: 850px;
+    margin: 1em auto; }
   .lead p {
     font-weight: 100;
-    font-family: "museo-sans"; }
+    font-family: "museo-sans";
+    max-width: 850px;
+    margin: auto; }
+  .lead button {
+    background: transparent;
+    font-size: 1.25em;
+    margin-top: 2rem;
+    box-shadow: none;
+    text-shadow: 1px 1px #000;
+    font-weight: 300;
+    border: 3px solid #799ac8;
+    color: #799ac8;
+    border-radius: 9px; }
+  .lead button:hover, .lead button:active, .lead button:focus, .lead input[type="button"]:active, .lead input[type="button"]:focus, .lead input[type="reset"]:active, .lead input[type="reset"]:focus, .lead input[type="submit"]:active, .lead input[type="submit"]:focus {
+    background: rgba(10, 20, 17, 0.1); }
+
+.features {
+  text-align: center; }
 
 .feature {
-  padding: 1.5rem;
-  font-weight: 200; }
+  font-weight: 300; }
   .feature h3 {
     text-transform: uppercase;
     font-weight: 900;
-    color: #76831a; }
-  .feature .icon {
+    color: #597fb3; }
+  .feature .fa {
+    background: #efeeed;
+    color: #8ba8cf;
+    display: inline-block;
+    padding: 2rem;
+    font-size: 100px;
+    border-radius: 50%;
+    margin: auto; }
+
+@media (min-width: 700px) and (max-width: 949px) {
+  .lead {
+    background: -webkit-linear-gradient(rgba(89, 127, 179, 0.4), black), url("./images/devices-medium.jpg");
+    background: linear-gradient(rgba(89, 127, 179, 0.4), black), url("./images/devices-medium.jpg");
+    background-size: cover;
+    background-position: center; }
+    .lead h2 {
+      font-size: 80px;
+      font-weight: 100;
+      padding-top: 40px; }
+  .feature .fa {
+    float: left;
+    display: block; }
+  .feature h3, .feature p {
+    margin-left: 230px;
+    clear: none;
+    text-align: left; }
+  .feature::after {
+    visibility: hidden;
     display: block;
-    margin: 0 auto;
-    max-width: 15rem; }
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    margin-bottom: 4rem; } }
+
+@media (min-width: 950px) {
+  .lead {
+    background: -webkit-linear-gradient(rgba(89, 127, 179, 0.4), black), url("./images/devices.jpg");
+    background: linear-gradient(rgba(89, 127, 179, 0.4), black), url("./images/devices.jpg");
+    background-size: cover;
+    background-position: center; }
+    .lead h2 {
+      font-size: 80px;
+      font-weight: 100;
+      padding-top: 40px; }
+    .lead p {
+      font-size: 1.4rem; }
+  .feature {
+    width: 33%;
+    float: left;
+    padding: 1rem; }
+  .features::after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0; } }
 
 .about {
-  padding: 1.5rem;
-  background: #76100e;
+  background: #141e2c;
   color: #f5e8df; }
+  .about .container {
+    padding: 0 1.5rem;
+    overflow: hidden; }
+    .about .container p {
+      margin: 4rem 1.5rem 3rem 23rem; }
+  .about img {
+    opacity: 0.3;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    float: left; }
 
-.contact {
-  padding: 1.5rem; }
+.gform_wrapper ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .gform_wrapper ul li {
+    padding-bottom: 1rem; }
 
-.site-footer {
-  padding: 1.5rem; }
+.gform_wrapper .button {
+  background: #76831a;
+  text-shadow: none;
+  box-shadow: none;
+  line-height: 2rem;
+  font-size: 1rem;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase; }
+
+.ui-datepicker {
+  background: #fff; }
+  .ui-datepicker .ui-datepicker-prev, .ui-datepicker ui-datepicker-month {
+    padding-right: 1rem; }
 
 /*--------------------------------------------------------------
 # Infinite scroll

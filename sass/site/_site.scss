@@ -14,13 +14,11 @@
 ## Header
 --------------------------------------------------------------*/
 
-
-
 .site-branding {
 	text-align: center;
 	
 	img {
-		width:10em;
+		height:100px;
 		margin:0 auto;
 	}
 }
@@ -30,56 +28,228 @@
 }
 
 
+.container {
+	padding:4rem 1.5rem;
+	max-width: 1100px
+}
+
+@media (min-width:700px) {
+	
+	.container {
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+
+}
+
 .lead {
 	background-color:$green;
-    background: linear-gradient(  rgba(89,70,74, 0.2) , rgba(89,70,74, 1.0) ), url('./images/devices.jpg');
+    background: linear-gradient(  transparentize($linkblue, 0.6) , darken($linkblue, 70%) ), url('./images/devices-small.jpg');
 	background-size: cover;
 	background-position: center;
 	color:white;
-	padding:1.5rem;
+	text-align: center;
 	
 	h2 {
 		font-weight: 900;
-		@include font-size(2.4);
+		font-size: 37px;
 		line-height: 1em;
-		padding-top:35vh;
+		padding-top:140px;
+		padding-bottom: 10px;
 		font-family: "museo-sans", sans-serif;
 		text-transform: uppercase;
+		text-shadow: 1px 1px 1px transparentize($darkgray, 0.5);
+		letter-spacing: 0.04em;
+		border-bottom: 4px solid transparentize( $linklightblue, 0.2 );
+		max-width: 850px;
+		margin: 1em auto;
 	}
 	p {
 		font-weight:100;
 		font-family: "museo-sans";
+		max-width: 850px;
+		margin: auto;
 	}
+	
+	button {
+		background: transparent;
+		font-size: 1.25em;
+		margin-top: 2rem;
+		box-shadow: none;
+		text-shadow: 1px 1px #000;
+		font-weight: 300;
+		border: 3px solid $linklightblue;
+		color: $linklightblue;
+		border-radius: 9px;
+	}
+	
+	button:hover, button:active, button:focus, input[type="button"]:active, input[type="button"]:focus, input[type="reset"]:active, input[type="reset"]:focus, input[type="submit"]:active, input[type="submit"]:focus {
+		background: transparentize($darkgray, 0.9);
+	}
+	
+}
+
+
+
+.features {
+	text-align: center;
 }
 
 .feature {
-	padding:1.5rem;
-	font-weight:200;
+	font-weight:300;
 	
 	h3 {
 		text-transform: uppercase;
 		font-weight:900;
-		color:$green;
+		color:$linkblue;
 	}
 	
-	.icon {
-		display: block;
-		margin:0 auto;
-		max-width: 15rem;
+	.fa {
+		background: lighten($gray, 42%);
+		color:lighten($linklightblue, 5%);
+		display:inline-block;
+		padding:2rem;
+		font-size: 100px;
+		border-radius: 50%;
+		margin: auto;
 	}
-	
 }
+
+@media (min-width:700px) and (max-width:949px) {
+
+	.lead {
+		
+    background: linear-gradient(  transparentize($linkblue, 0.6) , darken($linkblue, 70%) ), url('./images/devices-medium.jpg');
+	background-size: cover;
+	background-position: center;
+		
+		h2 {
+		font-size: 80px;
+		font-weight: 100;
+		padding-top:40px;
+		}
+	}
+	
+	.feature {
+				
+		.fa {
+			float:left;
+			display: block;
+		}
+		h3, p {
+			margin-left: 230px;
+			clear: none;
+			text-align: left;
+			
+		}
+	}
+	
+	.feature::after {
+		visibility: hidden;
+		display: block;
+		font-size: 0;
+		content: " ";
+		clear: both;
+		height: 0;
+		margin-bottom: 4rem;
+	
+	}
+}
+
+@media (min-width:950px) {
+	
+	.lead {
+		
+		background: linear-gradient(  transparentize($linkblue, 0.6) , darken($linkblue, 70%) ), url('./images/devices.jpg');
+		background-size: cover;
+		background-position: center;
+		
+		h2 {
+			font-size: 80px;
+			font-weight: 100;
+			padding-top: 40px;
+		}
+		
+		p {
+			font-size:1.4rem;
+		}
+	}
+	
+	.features {
+
+	}
+	.feature {
+		width:33%;
+		float:left;
+		padding:1rem;
+	}
+	.features::after {
+		visibility: hidden;
+		display: block;
+		font-size: 0;
+		content: " ";
+		clear: both;
+		height: 0;		
+	}
+}
+
+
 
 .about {
-	padding:1.5rem;
-	background:$darkred;
+	background:darken($linkblue, 40%);
 	color:$offwhite;
+
+	.container {
+		padding:0 1.5rem;
+		overflow: hidden;
+		p {
+			margin: 4rem 1.5rem 3rem 23rem;
+			
+	
+		}
+	}
+	img {
+		opacity: 0.3;
+		filter:grayscale(100%);
+		float: left;
+	}
+	
 }
 
-.contact {
-	padding:1.5rem;
+.gform_wrapper {
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		
+		li {
+			padding-bottom:1rem;
+		}
+	}
+	
+	.button {
+		background: $green;
+		text-shadow: none;
+		box-shadow: none;
+		line-height: 2rem;
+		font-size: 1rem;
+		font-weight:900;
+		color: #fff;
+		text-transform: uppercase;
+	}
+	
 }
+
+.ui-datepicker {
+	background: #fff;
+	
+	.ui-datepicker-prev, ui-datepicker-month {
+		padding-right:1rem;
+	}
+}
+
+
 
 .site-footer {
-	padding:1.5rem;
 }

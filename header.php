@@ -21,12 +21,13 @@
 <script src="https://use.typekit.net/hmi3yxg.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
+<script src="https://use.fontawesome.com/d51ff7d838.js"></script>
+
 <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'interfacestudio' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">

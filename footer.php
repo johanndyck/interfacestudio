@@ -14,7 +14,7 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
+		<div class="site-info container">
 			&copy; <?php echo date("Y") ?> Johann Dyck.  All rights reserved.
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
