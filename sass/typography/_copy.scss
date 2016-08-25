@@ -3,7 +3,8 @@ p {
 }
 
 dfn, cite, em, i {
-	font-style: italic;
+	/*font-style: italic; */
+	color:red;
 }
 
 blockquote {
@@ -42,4 +43,8 @@ mark, ins {
 
 big {
 	font-size: 125%;
+}
+
+strong, bold {
+	font-weight:900;
 }
