@@ -16,8 +16,9 @@ input[type="color"],
 textarea {
 	color: $color__text-input;
 	border: 1px solid $color__border-input;
-	border-radius: 3px;
-	padding: 3px;
+	border-radius: 7px;
+	padding: 0.25rem 0.5rem;
+	font-size: 1.1rem;
 
 	&:focus {
 		color: $color__text-input-focus;
@@ -28,6 +29,24 @@ select {
 	border: 1px solid $color__border-input;
 }
 
-textarea {
+textarea,
+input[type="text"],
+select {
 	width: 100%;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+	margin-right:0.75rem;
+}
+
+.name_first input[type="text"],
+.name_last input[type="text"]{
+	width:75%;
+	float:right;
+}
+
+.name_first label {
+	margin-bottom: 1rem;
+	display: inline-block;
 }

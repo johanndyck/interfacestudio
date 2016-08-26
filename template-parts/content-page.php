@@ -13,16 +13,12 @@
 
 	<style>
 		.entry-header {
-			background: url('<?php echo $backgroundImg[0]; ?>');
+			background-image: url('<?php echo $backgroundImg[0]; ?>');
 			background-size: cover;
-			min-height:62vh;
 			background-position: center;
-				
 		}
-		
-		
 	</style>
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('container'); ?>>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->

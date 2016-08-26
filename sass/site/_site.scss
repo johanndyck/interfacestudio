@@ -43,9 +43,9 @@
 
 }
 
-.lead {
-	background-color:$green;
-    background: linear-gradient(  transparentize($linkblue, 0.6) , darken($linkblue, 70%) ), url('./images/devices-small.jpg');
+.hero {
+	background-color:$darkblue;
+    background: linear-gradient(  transparentize($blue, 0.6) , darken($blue, 70%) ), url('./images/devices-small.jpg');
 	background-size: cover;
 	background-position: center;
 	color:white;
@@ -61,7 +61,7 @@
 		text-transform: uppercase;
 		text-shadow: 1px 1px 1px transparentize($darkgray, 0.5);
 		letter-spacing: 0.04em;
-		border-bottom: 4px solid transparentize( $linklightblue, 0.2 );
+		border-bottom: 4px solid transparentize( $lightblue, 0.2 );
 		max-width: 850px;
 		margin: 1em auto;
 	}
@@ -79,8 +79,8 @@
 		box-shadow: none;
 		text-shadow: 1px 1px #000;
 		font-weight: 300;
-		border: 3px solid $linklightblue;
-		color: $linklightblue;
+		border: 3px solid $lightblue;
+		color: $lightblue;
 		border-radius: 9px;
 	}
 	
@@ -102,12 +102,12 @@
 	h3 {
 		text-transform: uppercase;
 		font-weight:900;
-		color:$linkblue;
+		color:$blue;
 	}
 	
 	.fa {
 		background: lighten($gray, 42%);
-		color:lighten($linklightblue, 5%);
+		color:lighten($lightblue, 5%);
 		display:inline-block;
 		padding:2rem;
 		font-size: 100px;
@@ -118,9 +118,9 @@
 
 @media (min-width:700px) and (max-width:949px) {
 
-	.lead {
+	.hero {
 		
-    background: linear-gradient(  transparentize($linkblue, 0.6) , darken($linkblue, 70%) ), url('./images/devices-medium.jpg');
+    background: linear-gradient(  transparentize($blue, 0.6) , darken($blue, 70%) ), url('./images/devices-medium.jpg');
 	background-size: cover;
 	background-position: center;
 		
@@ -159,9 +159,9 @@
 
 @media (min-width:950px) {
 	
-	.lead {
+	.hero {
 		
-		background: linear-gradient(  transparentize($linkblue, 0.6) , darken($linkblue, 70%) ), url('./images/devices.jpg');
+		background: linear-gradient(  transparentize($blue, 0.6) , darken($blue, 70%) ), url('./images/devices.jpg');
 		background-size: cover;
 		background-position: center;
 		
@@ -197,8 +197,8 @@
 
 
 .about {
-	background:darken($linkblue, 40%);
-	color:$offwhite;
+	background:darken($blue, 40%);
+	color:$lightgray;
 
 	.container {
 		padding:0 1.5rem;
@@ -210,36 +210,14 @@
 		}
 	}
 	img {
-		opacity: 0.3;
+		opacity: 0.4;
 		filter:grayscale(100%);
 		float: left;
 	}
 	
 }
 
-.gform_wrapper {
-	ul {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		
-		li {
-			padding-bottom:1rem;
-		}
-	}
-	
-	.button {
-		background: $green;
-		text-shadow: none;
-		box-shadow: none;
-		line-height: 2rem;
-		font-size: 1rem;
-		font-weight:900;
-		color: #fff;
-		text-transform: uppercase;
-	}
-	
-}
+
 
 .ui-datepicker {
 	background: #fff;

@@ -35,4 +35,12 @@ img {
 	max-width: 100%; /* Adhere to container width. */
 }
 
+address {
+	font-style: normal;
+	color: $blue;
+	border-left: .25rem solid $lightgray;
+	padding-left:.75rem;
+}
+
+
 @import "tables";

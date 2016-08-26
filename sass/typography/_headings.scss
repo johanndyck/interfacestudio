@@ -1,40 +1,54 @@
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
 	font-weight:300;
+	margin-top:0rem;
+	margin-bottom:1.2rem;
 }
 
 
 h1 {
-	font-size:4rem;
-	color:darkgray;
-	border-bottom:3px solid darkgray;
+	font-size:2.5rem;
+	line-height: 2.5rem;
+	color:$blue;
+	border-bottom:2px solid $blue;
 	text-transform: uppercase;
 	font-weight:100;
-	line-height: 4rem;
-	background:lightgray;
+	text-align: center;
 }
 
+@media (min-width:700px) {
+	h1 {
+		font-size:5rem;
+		line-height: 5rem;
+		border-bottom-width: 3px;
+	}
+}
+
+
 h2 {
-	font-size:1.8rem;
+	font-size:1.75rem;
 	font-weight:900;
-	color:lightblue;
+	color:$orange;
 	text-transform: uppercase;
 }
 
 h3 {
-	font-size:1.8rem;
+	font-size:1.75rem;
 	font-weight:900;
-	color:lightgray;
+	color:$darkgray;
 }
 
 h4 {
-	font-size:1.6rem;
+	font-size:1.5rem;
+	color:$red;
 }
 
 h5 {
-	font-size:1.66rem;
+	font-size:1.5rem;
+	color:$orange;
 }
 
 h6 {
-	font-size:1.33rem;
+	font-size:1.25rem;
+	color:$blue;
 }
