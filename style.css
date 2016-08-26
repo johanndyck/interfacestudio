@@ -495,8 +495,14 @@ input[type="text"],
 select,
 input[type="email"],
 input[type="url"],
+input[type="number"],
 input[type="tel"] {
   width: 100%; }
+
+@media (min-width: 700px) {
+  form {
+    width: 75%;
+    margin: auto; } }
 
 input[type="radio"],
 input[type="checkbox"] {
@@ -513,8 +519,13 @@ input[type="file"] {
   line-height: 1rem; }
 
 .ginput_container_time {
-  width: 30%;
+  width: 20%;
   display: inline-block; }
+
+form table {
+  text-align: center; }
+  form table td {
+    padding-bottom: .25rem; }
 
 label {
   color: #E28F32; }
