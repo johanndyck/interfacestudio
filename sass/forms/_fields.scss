@@ -27,11 +27,16 @@ textarea {
 
 select {
 	border: 1px solid $color__border-input;
+		padding: 0.25rem 0.5rem;
+
 }
 
 textarea,
 input[type="text"],
-select {
+select,
+input[type="email"],
+input[type="url"],
+input[type="tel"] {
 	width: 100%;
 }
 
@@ -40,13 +45,19 @@ input[type="checkbox"]{
 	margin-right:0.75rem;
 }
 
-.name_first input[type="text"],
-.name_last input[type="text"]{
-	width:75%;
-	float:right;
+.ginput_complex label {
+	color:$darkgray;
+	font-size:0.9rem;
+	margin: 0.25rem 0 0.75rem;
+	display: block;
 }
 
-.name_first label {
-	margin-bottom: 1rem;
-	display: inline-block;
+input[type="file"] {
+	font-size:1rem;
+	line-height: 1rem;
+}
+
+.ginput_container_time {
+	width:30%;
+	display:inline-block;
 }
