@@ -1,3 +1,4 @@
+
 button,
 input[type="button"],
 input[type="reset"],
@@ -7,8 +8,9 @@ input[type="submit"] {
 	border-radius: 7px;
 	box-shadow: none;
 	color: $lightgray;
-	line-height: 1.6rem;
-	padding: .4rem .75rem .2rem;
+	line-height: 2;
+	min-height:2rem;
+	padding: 0rem .75rem 0rem;
 	text-transform:uppercase;
 	font-weight:900;
 	letter-spacing:.1rem;
@@ -30,7 +32,7 @@ input[type="submit"] {
 	
 }
 
-	/*.button {
+.button {
 		background: $orange;
 		text-shadow: none;
 		box-shadow: none;
@@ -40,27 +42,3 @@ input[type="submit"] {
 		color: #fff;
 		text-transform: uppercase;
 	}
-*/
-.gform_wrapper {
-	ul {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		
-		li {
-			padding-bottom:1.6rem;
-			
-			li {
-				padding-bottom:0;
-			}
-		}
-	}
-	
-	.gfield_error {
-		background: $lightgray;
-		color:$red;
-		border-radius:7px;
-	}
-	
-	
-}

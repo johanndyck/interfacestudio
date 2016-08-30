@@ -9,7 +9,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 	
-		<div class="lead">
+		<div class="hero">
 			<div class="container">
 				<h2>Building Connection</h2>
 				<p>Our online lives are dominated by interfaces. We want to build the best interfaces that not only get the job done, but connect people to you. If you need help with your web project contact us to see how we can help.

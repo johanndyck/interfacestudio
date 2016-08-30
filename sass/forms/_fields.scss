@@ -1,3 +1,4 @@
+
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -13,42 +14,19 @@ input[type="time"],
 input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
-textarea {
+textarea,
+select {
 	color: $color__text-input;
 	border: 1px solid $color__border-input;
 	border-radius: 7px;
 	padding: 0.25rem 0.5rem;
 	font-size: 1.1rem;
+	line-height: 1rem;
 
 	&:focus {
 		color: $color__text-input-focus;
 	}
 }
-
-select {
-	border: 1px solid $color__border-input;
-		padding: 0.25rem 0.5rem;
-
-}
-
-textarea,
-input[type="text"],
-select,
-input[type="email"],
-input[type="url"],
-input[type="number"],
-input[type="tel"] {
-	width: 100%;
-}
-
-@media (min-width:700px) {
-	form {
-		width:75%;
-		margin: auto;
-	}
-	
-}
-
 
 input[type="radio"],
 input[type="checkbox"]{
@@ -57,9 +35,7 @@ input[type="checkbox"]{
 
 .ginput_complex label {
 	color:$darkgray;
-	font-size:0.9rem;
-	margin: 0.25rem 0 0.75rem;
-	display: block;
+
 }
 
 input[type="file"] {
