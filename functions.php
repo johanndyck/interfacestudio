@@ -106,7 +106,7 @@ function interfacestudio_widgets_init() {
 		'name'          => esc_html__( 'Front Page Services', 'interfacestudio' ),
 		'id'            => 'services',
 		'description'   => esc_html__( 'Add widgets here.', 'interfacestudio' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'before_widget' => '<section id="%1$s" class="service %2$s">',
 		'after_widget'  => '</section>',
 	) );
 

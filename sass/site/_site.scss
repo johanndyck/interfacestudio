@@ -14,18 +14,8 @@
 ## Header
 --------------------------------------------------------------*/
 
-.site-branding {
-	text-align: center;
-	
-	img {
-		height:100px;
-		margin:0 auto;
-	}
-}
 
-.site-title {
-	margin:2rem;
-}
+
 
 
 .container {
@@ -92,11 +82,11 @@
 
 
 
-.features {
+.services {
 	text-align: center;
 }
 
-.feature {
+.service {
 	font-weight:300;
 	
 	h3 {
@@ -131,7 +121,7 @@
 		}
 	}
 	
-	.feature {
+	.service {
 				
 		.fa {
 			float:left;
@@ -145,7 +135,7 @@
 		}
 	}
 	
-	.feature::after {
+	.service::after {
 		visibility: hidden;
 		display: block;
 		font-size: 0;
@@ -176,15 +166,15 @@
 		}
 	}
 	
-	.features {
+	.services {
 
 	}
-	.feature {
+	.service {
 		width:33%;
 		float:left;
 		padding:1rem;
 	}
-	.features::after {
+	.services::after {
 		visibility: hidden;
 		display: block;
 		font-size: 0;

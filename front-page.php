@@ -11,29 +11,14 @@ get_header(); ?>
 	
 		<div class="hero">
 			<div class="container">
-				<h2>Building Connection</h2>
-				<p>Our online lives are dominated by interfaces. We want to build the best interfaces that not only get the job done, but connect people to you. If you need help with your web project contact us to see how we can help.
-				</p>
-				<button> Contact <i class="fa fa-pencil" aria-hidden="true"></i></button>			
+			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Front Page Welcome") ) : ?>
+			<?php endif;?>
 			</div>
 		</div>	
 
-		<section class="features container">
-			<div class="feature">
-				<i class="fa fa-line-chart" aria-hidden="true"></i>
-				<h3>Strategy Consulting</h3>
-				<p> Does your site meet your business goals? We will work with you to connect your business strategy with your online presence.</p>
-			</div>
-			<div class="feature">
-				<i class="fa fa-users" aria-hidden="true"></i>
-				<h3>Memorable Experiences</h3>
-				<p>Your user expects a great experience when visiting your site. We’ll make your site perform well, and look like you.</p>
-			</div>
-			<div class="feature">
-				<i class="fa fa-cogs" aria-hidden="true"></i>
-				<h3>Maintainable Solutions</h3>
-				<p>Let’s work together to develop a solution that is not outdated as soon as it’s launched.</p>
-			</div>		
+		<section class="services container">
+			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Front Page Services") ) : ?>
+			<?php endif;?>	
 		</section>
 		
 		<section class="about">
