@@ -1,0 +1,44 @@
+.site-branding {
+	text-align: center;
+     margin-left:80px;
+     position: relative;
+     z-index: 101;
+     background: #fff;
+     overflow: auto;
+	
+	img {
+		height:100px;
+		margin:10px auto;
+        max-height:60px;
+        display: block;
+	}
+}
+
+#content {margin-top:80px;}
+
+
+.site-header {
+    background:#fff;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+         box-shadow: 0 0 5px #777;
+
+}
+
+.admin-bar .site-header {
+    top:46px;
+}
+
+@media (min-width:782px) {
+    .admin-bar .site-header {
+        top:32px;
+    }
+
+}
+
+.site-title{
+    margin:0;
+    padding:0 1em;
+}
