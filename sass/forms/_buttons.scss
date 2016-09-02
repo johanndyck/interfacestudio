@@ -8,13 +8,12 @@ input[type="submit"] {
 	border-radius: 7px;
 	box-shadow: none;
 	color: $lightgray;
-	line-height: 2;
+	line-height: 1.6rem;
 	min-height:2rem;
 	padding: 0rem .75rem 0rem;
 	text-transform:uppercase;
 	font-weight:900;
 	letter-spacing:.1rem;
-	font-size:0.9rem;
 
 
 	&:hover {
@@ -27,7 +26,7 @@ input[type="submit"] {
 	}
 	
 	i {
-		color:$lightgray;
+		color:white;
 	}
 	
 }
@@ -36,9 +35,10 @@ input[type="submit"] {
 		background: $orange;
 		text-shadow: none;
 		box-shadow: none;
-		line-height: 2rem;
+		line-height: 2.4rem;
 		font-size: 1rem;
 		font-weight:900;
 		color: #fff;
 		text-transform: uppercase;
+		padding:1rem;
 	}

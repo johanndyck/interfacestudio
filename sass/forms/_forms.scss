@@ -4,9 +4,31 @@
 
 
 label {
-	color:$orange;
+	color:#9cb4be;
 	
 	div {
 		color:$darkgray;
 	}
+}
+
+.gform_wrapper {
+	
+	ul {
+		list-style: none;
+		margin:0;
+		padding: 0;
+	}
+	li {
+		padding-bottom: 1.2rem;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="submit"],
+	textarea, 
+	select {
+		width:100%;
+	}
+
+
 }

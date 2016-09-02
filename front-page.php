@@ -17,13 +17,17 @@ get_header(); ?>
 		</div>	
 
 		<section class="services container">
-			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Front Page Services") ) : ?>
-			<?php endif;?>	
+			<div class="container">
+				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Front Page Services") ) : ?>
+				<?php endif;?>	
+			</div><!-- container -->
 		</section>
 		
 		<section class="about">
 			<div class="container">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/johanndyck.jpg" alt="Johann Dyck">
+				<p class="image-container">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/johanndyck.jpg" alt="Johann Dyck">
+				</p>
 				<p>Hi. I’m Johann Dyck and I have been designing and developing sites for over 10 years. I started The Interface Studio to help people and businesses have an online presence that they are proud to claim. Contact me to see how we can work together.</p>		
 			</div>
 

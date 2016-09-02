@@ -15,7 +15,15 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info container">
-			&copy; <?php echo date("Y") ?> Johann Dyck.  All rights reserved.
+			<p>
+				&copy; <?php echo date("Y") ?> The Interface Studio.  All rights reserved.
+			</p>
+			<p>
+				The Interface Studio, LLC<br>
+				955 E Campbell Rd, Ste 300-541<br>
+				Richardson, TX 75081
+			</p>
+			<p><a href="tel:19723167333">(972)316-7333</p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
