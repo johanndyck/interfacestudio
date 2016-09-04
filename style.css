@@ -827,22 +827,26 @@ a {
     border: 2px solid #ECEEEE;
     color: #9CB4BE;
     display: inline-block;
-    padding: 2rem;
-    font-size: 5rem;
+    padding: 1.2rem;
+    font-size: 3.6rem;
     border-radius: 10%;
     margin: auto; }
 
 @media (min-width: 700px) and (max-width: 949px) {
   .hero {
     background: -webkit-linear-gradient(rgba(0, 102, 132, 0.8), rgba(0, 102, 132, 0.8)), url("./images/devices-medium.jpg");
-    background: linear-gradient(rgba(0, 102, 132, 0.8), rgba(0, 102, 132, 0.8)), url("./images/devices-medium.jpg"); }
+    background: linear-gradient(rgba(0, 102, 132, 0.8), rgba(0, 102, 132, 0.8)), url("./images/devices-medium.jpg");
+    background-size: cover;
+    background-position: center; }
     .hero h2 {
       font-size: 5rem; }
   .service .fa {
     float: left;
-    display: block; }
+    display: block;
+    margin-left: 2.4rem;
+    margin-top: -.6rem; }
   .service h3, .service p {
-    margin-left: 230px;
+    margin-left: 11rem;
     clear: none;
     text-align: left; }
   .service::after {
@@ -857,7 +861,9 @@ a {
 @media (min-width: 950px) {
   .hero {
     background: -webkit-linear-gradient(rgba(0, 102, 132, 0.8), rgba(0, 102, 132, 0.8)), url("./images/devices.jpg");
-    background: linear-gradient(rgba(0, 102, 132, 0.8), rgba(0, 102, 132, 0.8)), url("./images/devices.jpg"); }
+    background: linear-gradient(rgba(0, 102, 132, 0.8), rgba(0, 102, 132, 0.8)), url("./images/devices.jpg");
+    background-size: cover;
+    background-position: center; }
     .hero h2 {
       font-size: 80px;
       font-weight: 100;
@@ -881,7 +887,8 @@ a {
   overflow: hidden;
   color: #F9EDD2; }
   .about .container {
-    padding: 0; }
+    padding: 0;
+    max-width: 950px; }
   .about img {
     width: 100%;
     opacity: 0.40;
@@ -900,22 +907,22 @@ a {
   .about .image-container {
     margin: -1.2rem; }
 
-@media (min-width: 500px) {
+@media (min-width: 500px) and (max-width: 699px) {
   .about .container p {
     margin: 2.4rem;
-    margin-left: 55%; }
+    margin-left: 200px; }
   .about .container p.image-container {
-    width: 50%;
+    width: 150px;
     margin: -2.4rem 0;
     float: left;
     margin-left: 0; } }
 
-@media (min-width: 950px) {
+@media (min-width: 700px) {
   .about .container p {
     margin: 2.4rem;
-    margin-left: 35%; }
+    margin-left: 400px; }
   .about .container p.image-container {
-    width: 33%;
+    width: 350px;
     margin: -2.4rem 0;
     float: left;
     margin-left: 0; } }

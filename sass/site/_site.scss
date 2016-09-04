@@ -75,8 +75,6 @@
 	}	
 }
 
-
-
 .services {
 	text-align: center;
 	padding:3.6rem 0;
@@ -99,8 +97,8 @@
 		border: 2px solid #ECEEEE;
 		color:#9CB4BE;
 		display:inline-block;
-		padding:2rem;
-		font-size: 5rem;
+		padding:1.2rem;
+		font-size: 3.6rem;
 		border-radius: 10%;
 		margin: auto;
 	}
@@ -112,7 +110,8 @@
 	.hero {
 		
 	background: linear-gradient(  transparentize(#006684, 0.2) , transparentize(#006684, 0.2)  ), url('./images/devices-medium.jpg');
-
+	background-size: cover;
+	background-position: center;
 		
 		h2 {
 		font-size: 5rem;
@@ -124,9 +123,11 @@
 		.fa {
 			float:left;
 			display: block;
+			margin-left:2.4rem;
+			margin-top:-.6rem;
 		}
 		h3, p {
-			margin-left: 230px;
+			margin-left: 11rem;
 			clear: none;
 			text-align: left;
 			
@@ -150,7 +151,8 @@
 	.hero {
 		
 	background: linear-gradient(  transparentize(#006684, 0.2) , transparentize(#006684, 0.2)  ), url('./images/devices.jpg');
-		
+	background-size: cover;
+	background-position: center;		
 		h2 {
 			font-size: 80px;
 			font-weight: 100;
@@ -162,9 +164,6 @@
 		}
 	}
 	
-	.services {
-
-	}
 	.service {
 		width:33%;
 		float:left;
@@ -189,6 +188,7 @@
 
 	.container {
 		padding: 0;
+		max-width: 950px;
 	}
 
 	img {
@@ -210,17 +210,18 @@
 	
 }
 
-@media (min-width:500px) {
-	.about {
+
+@media (min-width:500px) and (max-width:699px) { 
+		.about {
 
 		.container p {
 			margin:2.4rem;
-			margin-left:55%;
+			margin-left:200px;
 		}
 
 
 		.container p.image-container {
-			width:50%;
+			width:150px;
 			margin:-2.4rem 0;
 			float:left;
 			margin-left:0;
@@ -229,17 +230,18 @@
 	}
 }
 
-@media (min-width:950px) {
+
+@media (min-width:700px) {
 		.about {
 
 		.container p {
 			margin:2.4rem;
-			margin-left:35%;
+			margin-left:400px;
 		}
 
 
 		.container p.image-container {
-			width:33%;
+			width:350px;
 			margin:-2.4rem 0;
 			float:left;
 			margin-left:0;
@@ -257,9 +259,4 @@
 	.ui-datepicker-prev, ui-datepicker-month {
 		padding-right:1rem;
 	}
-}
-
-
-
-.site-footer {
 }
